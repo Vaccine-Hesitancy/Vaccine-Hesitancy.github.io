@@ -34146,3 +34146,11 @@
          background-color: #fcfcfd
      }
  }
+
+ /*additional code*/
+ul.a {
+    list-style-type: circle;
+}
+ul.b {
+    list-style-type: square;
+}
