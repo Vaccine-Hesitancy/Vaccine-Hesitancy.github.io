@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv=“Pragma” content=”no-cache”>
+    <meta http-equiv=“Expires” content=”-1″>
+    <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+    <meta name="description" content="CDC’s home for COVID-19 data. Visualizations, graphs, and data in one easy-to-use website.">
+    <meta property="og:title" content="COVID Data Tracker">
+    <meta property="og:description" content="CDC’s home for COVID-19 data. Visualizations, graphs, and data in one easy-to-use website.">
+    <meta property="fb:app_id" content="205691699516606">
+    <meta property="og:url" content="https://covid.cdc.gov/covid-data-tracker">
+    <meta property="og:image" content="images/coviddatatracker_your_community_sm.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="article:published_time" content="2020-03-28">
+    <meta property="og:author" content="CDC">
+    <meta property="article:author" content="CDC">
+    <meta property="og:site_name" content="Centers for Disease Control and Prevention">
+    <meta property="og:type" content="article">
+    <meta name="author" content="CDC">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@CDCgov">
+    <meta name="twitter:creator" content="@CDCgov">
+    <meta name="twitter:title" content="COVID Data Tracker">
+    <meta name="twitter:description" content="CDC’s home for COVID-19 data. Visualizations, graphs, and data in one easy-to-use website.">
+    <meta name="twitter:image" content="https://covid.cdc.gov/covid-data-tracker/images/coviddatatracker_your_community_sm.png">
+    <meta name="twitter:image:src" content="https://covid.cdc.gov/covid-data-tracker/images/coviddatatracker_your_community_sm.png">
+    <meta name="keywords" content="Case, Death, Mortality, State, County, National, USA, Update, Rates, Numbers, Statistics, Map, Data, Tracker, CDC, COVID, COVID-19, Coronavirus, last 7 days, Vaccinations, Vaccination">
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel="stylesheet" href="./css/fa.min.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./css/semantic.min.css">
+    <script src="lib/keybinds.js"></script>
+    <script src="lib/d3.min.js"></script>
+    <script src="lib/d3.v4.min.js"></script>
+    <script src="lib/topojson.js"></script>
+    <script src="lib/jquery-3.4.1.min.js"></script>
+    <script src="lib/jquery-ui.min.js"></script>
+    <script src="lib/jquery.tablesort.min.js"></script>
+    <script src="lib/semantic.min.js"></script>
+    <script src="lib/moment.min.js"></script>
+    <script src="https://public.tableau.com/javascripts/api/tableau-2.5.0.min.js"></script>
+    <title>NIH Vaccine Hesitancy</title>
+    <script src="https://www.cdc.gov/JScript/foresee-variables.js"></script>
+    <script>
+        /* ForeSee Embed Script v2.01
+                // DO NOT MODIFY BELOW THIS LINE *****************************************/
+        ;
+        (function(g) {
+            var d = document,
+                am = d.createElement("script"),
+                h = d.head || d.getElementsByTagName("head")[0],
+                fsr = "fsReady",
+                aex = {
+                    "src": "https://www.cdc.gov/JScript/foresee/latest/gateway.min.js",
+                    "type": "text/javascript",
+                    "async": "true",
+                    "data-vendor": "fs",
+                    "data-mode": "selfhost",
+                    "data-environment": "production",
+                    "data-hasssl": "true",
+                    "data-client": "cdc",
+                    "data-codelocation": "https://www.cdc.gov/JScript/foresee/latest/foresee_assets/code/19.7.6/",
+                    "data-isselfhosted": "true",
+                    "data-product-assets": "https://www.cdc.gov/JScript/foresee/latest/foresee_assets/product_assets/",
+                    "data-role": "gateway"
+                };
+            for (var attr in aex) {
+                am.setAttribute(attr, aex[attr]);
+            }
+            h.appendChild(am);
+            g[fsr] || (g[fsr] = function() {
+                var aT = "__" + fsr + "_stk__";
+                g[aT] = g[aT] || [];
+                g[aT].push(arguments);
+            });
+        })(window);
+        /* DO NOT MODIFY ABOVE THIS LINE *****************************************/
+    </script>
+
+
+
+    <script>
+        ! function(a) {
+            var e = "https://s.go-mpulse.net/boomerang/",
+                t = "addEventListener";
+            if ("False" == "True") a.BOOMR_config = a.BOOMR_config || {}, a.BOOMR_config.PageParams = a.BOOMR_config.PageParams || {}, a.BOOMR_config.PageParams.pci = !0, e = "https://s2.go-mpulse.net/boomerang/";
+            if (window.BOOMR_API_key = "ZDY9D-TNDG8-UWZK2-KTZCT-CPAAK", function() {
+                    function n(e) {
+                        a.BOOMR_onload = e && e.timeStamp || (new Date).getTime()
+                    }
+                    if (!a.BOOMR || !a.BOOMR.version && !a.BOOMR.snippetExecuted) {
+                        a.BOOMR = a.BOOMR || {}, a.BOOMR.snippetExecuted = !0;
+                        var i, _, o, r = document.createElement("iframe");
+                        if (a[t]) a[t]("load", n, !1);
+                        else if (a.attachEvent) a.attachEvent("onload", n);
+                        r.src = "javascript:void(0)", r.title = "", r.role = "presentation", (r.frameElement || r).style.cssText = "width:0;height:0;border:0;display:none;", o = document.getElementsByTagName("script")[0], o.parentNode.insertBefore(r, o);
+                        try {
+                            _ = r.contentWindow.document
+                        } catch (O) {
+                            i = document.domain, r.src = "javascript:var d=document.open();d.domain='" + i + "';void(0);", _ = r.contentWindow.document
+                        }
+                        _.open()._l = function() {
+                            var a = this.createElement("script");
+                            if (i) this.domain = i;
+                            a.id = "boomr-if-as", a.src = e + "ZDY9D-TNDG8-UWZK2-KTZCT-CPAAK", BOOMR_lstart = (new Date).getTime(), this.body.appendChild(a)
+                        }, _.write("<bo" + 'dy onload="document._l();">'), _.close()
+                    }
+                }(), "".length > 0)
+                if (a && "performance" in a && a.performance && "function" == typeof a.performance.setResourceTimingBufferSize) a.performance.setResourceTimingBufferSize();
+            ! function() {
+                if (BOOMR = a.BOOMR || {}, BOOMR.plugins = BOOMR.plugins || {}, !BOOMR.plugins.AK) {
+                    var e = "" == "true" ? 1 : 0,
+                        t = "",
+                        n = "vvbhvvqxjh2wwygq7xza-f-d2743dd8f-clientnsv4-s.akamaihd.net",
+                        i = {
+                            "ak.v": "31",
+                            "ak.cp": "1063452",
+                            "ak.ai": parseInt("627440", 10),
+                            "ak.ol": "0",
+                            "ak.cr": 17,
+                            "ak.ipv": 4,
+                            "ak.proto": "h2",
+                            "ak.rid": "79e718a7",
+                            "ak.r": 38362,
+                            "ak.a2": e,
+                            "ak.m": "",
+                            "ak.n": "essl",
+                            "ak.bpcip": "173.66.122.0",
+                            "ak.cport": 62980,
+                            "ak.gh": "23.48.151.177",
+                            "ak.quicv": "",
+                            "ak.tlsv": "tls1.3",
+                            "ak.0rtt": "",
+                            "ak.csrc": "-",
+                            "ak.acc": "",
+                            "ak.t": "1624309234",
+                            "ak.ak": "hOBiQwZUYzCg5VSAfCLimQ==LsFDdXo9x/Lq7HLH02mwCKdH1GvBIw7wh8Uv3JHOgRAIpBKS/G2eqeyn9B4TQAaa+IogdJ5ppR2yKNrfoOnDCw98ST3pk6xirSjylSpGfbywCISE1Mbx6Kzja9yNsRMXB9NCVl4Vvk/mzrYuyLbS6lEuu/6EZragFXNKsW5yT0rv+/JQ5R6Ti21LgKlvYHnH0hQ3sqiOwbcUTPpOFmiQ3ThnNuQzQYGn2vD/z6gGt1zkeLFq/IxHtG2e3qFgHpS1/F1B90eRYTZ6KRyvjSNptUKiVyESX87Aa9isvvgVj5H/n+svZoVoNB6gRp4gTlRpMZhFtp4PBp04DYANfIL3CE8G0a1BGCYhANbUseBC8XItLmqSp/TtvplYnD3ix4qFEU5bXFKiRpgf7Re5gBUfDj/ohACidVExLXcxtZzkSzs=",
+                            "ak.pv": "11",
+                            "ak.dpoabenc": ""
+                        };
+                    if ("" !== t) i["ak.ruds"] = t;
+                    var _ = {
+                        i: !1,
+                        av: function(e) {
+                            var t = "http.initiator";
+                            if (e && (!e[t] || "spa_hard" === e[t])) i["ak.feo"] = void 0 !== a.aFeoApplied ? 1 : 0, BOOMR.addVar(i)
+                        },
+                        rv: function() {
+                            var a = ["ak.bpcip", "ak.cport", "ak.cr", "ak.csrc", "ak.gh", "ak.ipv", "ak.m", "ak.n", "ak.ol", "ak.proto", "ak.quicv", "ak.tlsv", "ak.0rtt", "ak.r", "ak.acc", "ak.t"];
+                            BOOMR.removeVar(a)
+                        }
+                    };
+                    BOOMR.plugins.AK = {
+                        akVars: i,
+                        akDNSPreFetchDomain: n,
+                        init: function() {
+                            if (!_.i) {
+                                var a = BOOMR.subscribe;
+                                a("before_beacon", _.av, null, null), a("onbeacon", _.rv, null, null), _.i = !0
+                            }
+                            return this
+                        },
+                        is_complete: function() {
+                            return !0
+                        }
+                    }
+                }
+            }()
+        }(window);
+    </script>
+</head>
+
+<body class="theme-cyan">
+    
+    <div class="container-fluid header-wrapper">
+        <div class="container-fluid px-5">
+            <header role="banner" aria-label="Header" class="pt-2 pb-2">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <a href="https://datascience.nih.gov/">
+                        <strong style="margin-bottom: .5rem;">National Institutes of Health</strong><br>
+                        <em>Office of Data Science Strategy</em>
+                 
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="container-fluid site-title">
+        <div class="container-fluid px-4">
+            <div class="row">
+                <div class="col">
+                    <div class="display-6_ text-white fw-500 pt-0 pb-0 d-none d-md-block">
+         
+                        <a> 
+                            Supporting Pandemic Recovery
+                        </a>
+                        <br>
+                        <br>
+                        <span>
+                            Building Insights on <strong>Vaccine Hesitancy</strong> in the Communities Hardest Hit by COVID-19
+
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+
+    <div class="container-fluid">
+        <div id="header_middle">
+         
+            <nav id="header_nav" class="navbar">
+
+                <!-- Menu -->
+                <h2 id="btnMobileHome" class="boxbtn" data-tabname="cases"> </h2>
+
+                <a href="javascript:void(0);" class="icon" id="hamburgerMenu">
+                <button id="hamburgerIcon" class="btn-dark" style="display: none;">Menu <i class="fa fa-chevron-right"></i></button>
+            </a>
+            </nav>
+
+            <!-- /Menu -->
+
+
+        </div>
+    </div>
+
+    <div id="outerContainer" class="d-flex container-fluid">
+        <div id="navButtonsLeft" class="box" role="navigation" aria-label="Main">
+            <ul id="navWrapperHome" class="subnav">
+                <li id="homeCont">
+                    <ul id="homelist" class="homeContainer">
+                        <li>
+                            <button onclick="location.href='abstract.html'" class="homeBtn" id="abstract" >Introduction</button>       
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="navWrappervaccinationrate" class="externalLink">
+                <li>
+                    <button onclick="window.open('http://www.vaccine.precisionforcovid.org/')" id="vaccination-rate" class="externalLinkBtn extLink" >
+                            Vaccination Rate
+                        </button>
+                </li>
+            </ul>
+            <ul id="navWrappervaccinehesitancy" class="externalLink">
+                <li>
+                    <button onclick="window.open('http://data.cdc.gov/stories/s/Vaccine-Hesitancy-for-COVID-19/cnd2-a6zw/')" id="vaccine-hesitancy" class="externalLinkBtn extLink" >
+                            Vaccine Hesitancy
+                        </button>
+                </li>
+            </ul>
+            <ul id="navWrappersocioeconomic" class="subnav">
+                <li id="commCont" class="navContbtns">
+                    <button class="parentNav d-flex" id="prntComm" data-tabname="community" data-tablink="community"><span class="flex-grow-1">Socioeconomic Status</span><span class="mobile-caret"><i class="fa fa-plus"></i></span></button>
+                    <ul id="sub-content-comm" class="subnav-content sub-content" data-page="Laboratory">
+                        <li class="childContainer">
+                            <button class="boxbtn desktopBtn" id="countyView" data-tabname="county-view" data-group="community" aria-labelledby="countyView">Computer and Internet Availability</button>
+                        </li>
+                        <li class="childContainer">
+                            <button class="boxbtn desktopBtn" id="forcastingBoxbtn" data-tabname="forecasting_weeklydeaths" data-group="community" aria-labelledby="forcastingBoxbtn">Poverty</button>
+                        </li>
+                        <li class="childContainer">
+                            <button class="boxbtn desktopBtn" id="vaccinationCommTab" data-tabname="vaccinations" data-group="community" aria-labelledby="vaccinationTab">Unemployment</button>
+                        </li>
+                        <li class="childContainer">
+                            <button class="boxbtn desktopBtn" id="communityProfileReport" data-tabname="community-profile-report" data-group="community" aria-labelledby="communityProfileReport">No High School Diploma</button>
+                        </li>
+                        <li class="childContainer">
+                            <button class="boxbtn desktopBtn" id="statereportprofile" data-tabname="state-report-profile" data-group="community" aria-labelledby="statereportprofile">College Education</button>
+                        </li>
+                        <li class="childContainer">
+                            <button class="boxbtn desktopBtn" id="pviBoxBtn" data-tabname="pandemic-vulnerability-index" data-group="community" aria-labelledby="pviBoxBtn">Born in the US</button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul id="navWrapperhousehold" class="subnav">
+                <li id="commCont" class="navContbtns">
+                    <button class="parentNav d-flex" id="prntComm" data-tabname="community" data-tablink="community"><span class="flex-grow-1">Household composition</span><span class="mobile-caret"><i class="fa fa-plus"></i></span></button>
+                    <ul id="sub-content-comm" class="subnav-content sub-content" data-page="Laboratory">
+                        <li class="childContainer">
+                            <button class="boxbtn desktopBtn" id="countyView" data-tabname="county-view" data-group="community" aria-labelledby="countyView">Single Parent Household</button>
+                        </li>
+                        <li class="childContainer">
+                            <button class="boxbtn desktopBtn" id="forcastingBoxbtn" data-tabname="forecasting_weeklydeaths" data-group="community" aria-labelledby="forcastingBoxbtn">65 Years and older</button>
+                        </li>
+                        <li class="childContainer">
+                            <button class="boxbtn desktopBtn" id="vaccinationCommTab" data-tabname="vaccinations" data-group="community" aria-labelledby="vaccinationTab">17 or Younger</button>
+                        </li>
+                        <li class="childContainer">
+                            <button class="boxbtn desktopBtn" id="communityProfileReport" data-tabname="community-profile-report" data-group="community" aria-labelledby="communityProfileReport">Disability Status</button>
+                        </li>          
+                    </ul>
+                </li>
+            </ul>
+
+           
+
+         
+
+        </div>
+
+        <div id="outRightMainContainer">
+            <section id="titleSection">
+
+                
+                <h1 id="mainContent_Title" tabindex="0"></h1>
+                <h3 id="mainContent_SubTitle" tabindex="0"></h3>
+            </section>
+            <main id="maincontent">
+
+            </main>
+            <footer class="cvi_footer">
+                <div class="crosslink-container"></div>
+                <div id="commonFooter">
+                    <div class="footer-link-btn" id="footer-link">
+                        <a id="viewHistoricLink"><span class="under-line"></span></a>
+                    </div>
+                </div>
+                <div id="pageFooter"></div>
+            </footer>
+        </div>
+
+
+    </div>
+    
+    <div id="device-indicator" style="display:none"></div>
+    <!-- xxxxxxxxxxxxxxxxxx METRICS code begins here xxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    <div id="metrics">
+        <!-- Google DAP inclusion -->
+        <script id="_fed_an_ua_tag" src="https://www.cdc.gov/JScript/metrics/google/Universal-Federated-Analytics-Min.js?agency=HHS&amp;subagency=CDC"></script>
+        <!-- Begin Adobe Analytics code version: JS-2.0 -->
+        <script language="JavaScript" type="text/javascript" src="https://www.cdc.gov/JScript/metrics/topic_levels.js"></script>
+        <script language="JavaScript" type="text/javascript" src="https://www.cdc.gov/JScript/metrics/adobe/analytics_cdcgov.js"></script>
+        <noscript>
+         <a href="https://www.adobe.com">
+             <img src="https://cdc.112.2o7.net/b/ss/cdcgov/1/H.21--NS/01/H.21--NS/0" height="1" width="1" alt="Web Analytics" />
+         </a>
+     </noscript>
+        <!--/DO NOT REMOVE/-->
+        <!-- End Adobe Analytics code version: JS-2.0 -->
+        <span id="omnitureInteractionsUrl">
+         <script>
+             var omnitureInteractionsUrl ='//cdc.112.2o7.net/b/ss/cdcgov/1/H.21--NS/0?cl=session&j=1.0&c41=CDC COVID Data Tracker&c40=[c40]&i=[i]';
+         </script>
+     </span>
+    </div>
+
+    
+    
+
+    <script type="text/javascript" src="TemplatePackage/js/tp-search.js"></script>
+    <script type="text/javascript" src="index.bundle.js"></script>
+  
+    <script>
+        if (appState.IE_DETECTED) {
+            window.location.href = "support.html";
+        }
+    </script>
+</body>
+
+</html>
