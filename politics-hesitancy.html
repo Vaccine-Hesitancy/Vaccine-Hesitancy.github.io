@@ -260,67 +260,38 @@
                         </button>
                 </li>
             </ul>
-            <ul id="navWrappervaccinehesitancy" class="externalLink">
+            <ul id="navWrappervaccinerate-hesitancy" class="subnav">
                 <li>
-                    <button onclick="location.href='politics.html'" class="homeBtn" id="abstract" >
-                            Election & Politics 
-                    </button>
+                    <ul class="homeContainer">
+                        <li>
+                            <button onclick="location.href='vaccinerate-hesitancy.html'" class="homeBtn"id="vaccinerate-hesitancy" >
+                                Vaccination Rate & Hesitancy 
+                            </button>
+                        </li>
+                    </ul>
                 </li>
             </ul>
-
+            <ul id="navWrapperpolitics-hesitancy" class="subnav">
+                <li>
+                    <ul class="homeContainer">
+                        <li>
+                            <button onclick="location.href='politics-hesitancy.html'" class="homeBtn"id="politics-hesitancy" >
+                                Politics & Hesitancy 
+                            </button>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
             <ul id="navWrappersocioeconomic" class="subnav">
                 <li id="commCont" class="navContbtns">
-                    <button class="parentNav d-flex" id="prntComm" data-tabname="community" data-tablink="community"><span class="flex-grow-1">Socioeconomic Status</span><span class="mobile-caret"><i class="fa fa-plus"></i></span></button>
+                    <button class="parentNav d-flex" id="prntComm" data-tabname="community" data-tablink="community"><span class="flex-grow-1">Socioeconomic Status & Hesitancy</span><span class="mobile-caret"><i class="fa fa-plus"></i></span></button>
                     <ul id="sub-content-comm" class="subnav-content sub-content" data-page="Laboratory">
                         <li class="childContainer">
-                            <button class="boxbtn desktopBtn" id="countyView" data-tabname="county-view" data-group="community" aria-labelledby="countyView">Computer and Internet Availability</button>
+                            <button class="boxbtn desktopBtn" onclick="location.href='income-hesitancy.html'" id="income-hesitancy">Medium Household Income</button>
                         </li>
                         <li class="childContainer">
-                            <button class="boxbtn desktopBtn" id="forcastingBoxbtn" data-tabname="forecasting_weeklydeaths" data-group="community" aria-labelledby="forcastingBoxbtn">Poverty</button>
-                        </li>
-                        <li class="childContainer">
-                            <button class="boxbtn desktopBtn" id="vaccinationCommTab" data-tabname="vaccinations" data-group="community" aria-labelledby="vaccinationTab">Unemployment</button>
-                        </li>
-                        <li class="childContainer">
-                            <button class="boxbtn desktopBtn" id="communityProfileReport" data-tabname="community-profile-report" data-group="community" aria-labelledby="communityProfileReport">No High School Diploma</button>
-                        </li>
-                        <li class="childContainer">
-                            <button class="boxbtn desktopBtn" id="statereportprofile" data-tabname="state-report-profile" data-group="community" aria-labelledby="statereportprofile">College Education</button>
-                        </li>
-                        <li class="childContainer">
-                            <button class="boxbtn desktopBtn" id="pviBoxBtn" data-tabname="pandemic-vulnerability-index" data-group="community" aria-labelledby="pviBoxBtn">Born in the US</button>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <ul id="navWrapperhousehold" class="subnav">
-                <li id="commCont" class="navContbtns">
-                    <button class="parentNav d-flex" id="prntComm" data-tabname="community" data-tablink="community"><span class="flex-grow-1">Household composition</span><span class="mobile-caret"><i class="fa fa-plus"></i></span></button>
-                    <ul id="sub-content-comm" class="subnav-content sub-content" data-page="Laboratory">
-                        <li class="childContainer">
-                            <button class="boxbtn desktopBtn" id="countyView" data-tabname="county-view" data-group="community" aria-labelledby="countyView">Single Parent Household</button>
-                        </li>
-                        <li class="childContainer">
-                            <button class="boxbtn desktopBtn" id="forcastingBoxbtn" data-tabname="forecasting_weeklydeaths" data-group="community" aria-labelledby="forcastingBoxbtn">65 Years and older</button>
-                        </li>
-                        <li class="childContainer">
-                            <button class="boxbtn desktopBtn" id="vaccinationCommTab" data-tabname="vaccinations" data-group="community" aria-labelledby="vaccinationTab">17 or Younger</button>
-                        </li>
-                        <li class="childContainer">
-                            <button class="boxbtn desktopBtn" id="communityProfileReport" data-tabname="community-profile-report" data-group="community" aria-labelledby="communityProfileReport">Disability Status</button>
-                        </li>          
-                    </ul>
-                </li>
-            </ul>
-            <ul id="navWrapperhousehold" class="subnav">
-                <li id="commCont" class="navContbtns">
-                    <button class="parentNav d-flex" id="prntComm" data-tabname="community" data-tablink="community"><span class="flex-grow-1">Electoral/Political</span><span class="mobile-caret"><i class="fa fa-plus"></i></span></button>
-                    <ul id="sub-content-comm" class="subnav-content sub-content" data-page="Laboratory">
-                        <li class="childContainer">
-                            <button class="boxbtn desktopBtn" id="countyView" data-tabname="county-view" data-group="community" aria-labelledby="countyView">2020 Presidential Election Results</button>
-                        </li>
-                        <li class="childContainer">
-                            <button class="boxbtn desktopBtn" id="forcastingBoxbtn" data-tabname="forecasting_weeklydeaths" data-group="community" aria-labelledby="forcastingBoxbtn">Vote and Registeration</button>
+                            <button class="boxbtn desktopBtn" onclick="location.href='poverty-hesitancy.html'" id="poverty-hesitancy">Poverty</button>
                         </li>
                     </ul>
                 </li>
@@ -342,7 +313,7 @@
                 Something to Write
             </section>
             <main id="maincontent">
-                <div class='tableauPlaceholder' id='viz1624499920822' style='position: relative'><noscript><a href='#'><img alt='Hesitancy_Trump_map ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Va&#47;VaccineHesitancyLevelDifference&#47;Hesitancy_Trump_map&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='VaccineHesitancyLevelDifference&#47;Hesitancy_Trump_map' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Va&#47;VaccineHesitancyLevelDifference&#47;Hesitancy_Trump_map&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1624499920822');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <div class='tableauPlaceholder' id='viz1624506685556' style='position: relative'><noscript><a href='#'><img alt='Hesitancy_Trump_map ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Va&#47;VaccineHesitancywithElectionResults&#47;Hesitancy_Trump_map&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='VaccineHesitancywithElectionResults&#47;Hesitancy_Trump_map' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Va&#47;VaccineHesitancywithElectionResults&#47;Hesitancy_Trump_map&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1624506685556');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1182px';vizElement.style.height='977px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1182px';vizElement.style.height='977px';} else { vizElement.style.width='100%';vizElement.style.height='977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
             </main>
             <footer class="cvi_footer">
                 <div class="crosslink-container"></div>
